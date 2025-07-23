@@ -1,0 +1,345 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+/*
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  font-size: 20px;
+}
+*/
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  font-size: 20px;
+  background-color: #f3f6fa;
+}
+
+
+h1 a{background-color:transparent;color:#FFF;text-decoration:none}
+h1 a:focus{color:#FFF;text-decoration:none}
+h1 a:hover{color:#FFF;text-decoration:none}
+
+video{vertical-align:middle}
+
+#LogosInstitutions	{float:right; padding-top:40px; width:289}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  /*position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;*/
+  
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%); /* IE 9 */
+  -webkit-transform: translate(-50%,-50%); /* Safari */
+}
+
+.photo_me  {
+  padding:20px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* CUSTOMIZE THE CONTACT FORM
+-------------------------------------------------- */
+
+.form-item {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.form-item label {
+  display: block;
+  font-weight: bold;
+}
+.form-required {
+  color: #f00;
+}
+
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0 10px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.shadowrightbottom {
+  padding:0 10px 10px 0;
+  box-shadow:3px 3px 2px #999;
+  margin:0 20px 20px 0;
+  width:100%;
+  max-width:400px;
+}
+
+.noshadowrightbottom {
+  padding:0 10px 10px 0;
+  margin:0 20px 10px 0;
+  width:100%;
+  max-width:400px;
+}
+
+.abstractmargin {
+  clear:both;
+  display:block;
+  float:left;
+  margin-bottom:40px;
+}
+
+.wistia_video {
+/*  clear:both; */
+  display:block;
+  float:left;
+  margin-bottom:10px;
+}
+
+.wistia_wrapper {
+  margin-top:60px;
+}
+
+.Banner_Photos {
+  clear:both;
+  display:block;
+  float:left;
+  margin-bottom:50px;
+  margin-top:50px;
+}
+
+.Banner_Photos img {
+  max-width:100%; 
+  max-height:100%;
+}
+
+.ContourPhoto {
+ float:right;
+ border: 2px solid white;
+ border-radius: 50%;
+ width: 40px;
+ height: 40px;
+ margin-top: 5px;
+ margin-bottom: 5px;
+}
+
+.header_projects {
+ color: #168298;
+}
+
+.Vinz-dropdown-container {
+	border: 1px solid #ccc;
+	transition: box-shadow 0.3s ease;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Vinz-dropdown-container.active {
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Vinz-dropdown-btn {
+	background-color: #f9f9f9;
+	padding: 10px 10px 0px 10px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	border: 1px solid #f1f1f1;
+	cursor: pointer;
+	position: relative; /* Ensure positioning for pseudo-element */
+	display: flex;
+	justify-content: space-between;
+	outline: none;
+}
+
+.Vinz-dropdown-btn::after {
+	content: "▶"; /* Closed state */
+	transition: transform 0.3s ease;
+	color: #A0A0A0
+}
+
+.Vinz-dropdown-btn.active::after {
+	content: "▼"; /* Open state */
+	color: #A0A0A0
+}
+
+.Vinz-dropdown-content {
+	display: none;
+	padding: 10px;
+	background-color: #fff;
+	overflow: auto;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+
+
+/* Proper override styles for Bootstrap inverse navbar */
+.navbar.navbar-inverse {
+  background-color: #00455cef !important;
+  border-color: #00384a !important;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #00779fef !important;
+}
+
+/* Override active tab background for inverse navbar */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #ffffff !important;  
+  color: #00455cef !important; 
+}
+
+/* Style both boxes */
+.first-box,
+.recent-publications-box {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 22px;
+  overflow: hidden;
+}
+
+/* Add space between boxes dynamically */
+.recent-publications-box {
+  margin-top: 60px;
+}
+
+/* Ensure image float is cleared */
+.first-box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Adjust font size for small screens if needed */
+@media (max-width: 576px) {
+  .first-box,
+  .recent-publications-box {
+    font-size: 20px;
+  }
+}
